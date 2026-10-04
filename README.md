@@ -42,7 +42,8 @@ The full methodology, table definitions and limitations are in **[METHODS.md](ME
 │   └── hypothetical_hnm_DAG.py             # Hypothetical weekly Airflow DAG (02 → 06)
 ├── results/
 │   └── Week_35_36_Results.md               # Dashboard analysis & result discussion 
-└── img/                                    # Databricks Jobs pipeline & dashboard screenshot                   
+├── img/                                    # Databricks Jobs pipeline & dashboard screenshot                   
+└── data/                                   # Segmented week 35 - 38 csv files       
 ```
 ## Data
 
