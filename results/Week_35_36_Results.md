@@ -84,9 +84,9 @@ The log shows three runs with stable sample sizes and one gap: the week-36 run r
 - **Design diagnostics.** Matched controls fall from 4,440 to roughly 4,250. R² (0.025 in week 35) shares an axis with counts in the thousands, so it reads as zero; a low R² is expected, since the DiD regression only separates group and period means.
 - **Embedding freshness.** The embedding timestamp rises between the first two runs, then stays at 19:37 for the week-36 run, so notebook 03 was not rerun. This causes no leakage, because its behavior cutoff (2020-08-24) is still before the week-36 treatment week. But purchases from the week of 2020-08-24 are missing from the behavior embeddings and the chart shows this only as a flat line.
 
-![Week_35_Dashboard_Health](../img/wk35_3_Health.png)
+![Week_35_Dashboard_Health](../img/wk35_4_Health.png)
 
-![Week_36_Dashboard_Health](../img/wk36_3_Health.png)
+![Week_36_Dashboard_Health](../img/wk36_4_Health.png)
 
 ## What the results mean
 
