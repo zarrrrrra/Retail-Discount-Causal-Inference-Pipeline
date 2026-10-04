@@ -37,9 +37,9 @@ Brackets are 95% confidence intervals. Because gross is negative, the cannibaliz
 
 Garment Full body carries the most negative lift in both runs (the darkest bar in the lift chart). The B Lola Beach Dress is among the best-selling discounted products, yet its week-5 units sit far below its baseline in both runs: a summer item selling past its peak.
 
-&#91;image: Headline KPIs tab, week-35 run\]
+![Week_35_Dashboard_HeadlineKPIs](../img/wk35_1_Headline.png)
 
-&#91;image: Headline KPIs tab, week-36 run\]
+![Week_36_Dashboard_HeadlineKPIs](../img/wk36_1_Headline.png)
 
 ## Parallel trends
 
@@ -60,9 +60,9 @@ Most discounted articles sold less than their own baseline and less than their m
 - **Or a loss into a larger loss.** Pirate Leggings (1), 54% off, fell from 24.50 to 4 units while their controls rose 15.10, for an adjusted lift of −35.60.
 - **No dose–response.** Articles discounted 40–90% cluster near zero lift, while the largest drops come at 5–35% discounts. Deep markdowns likely go to low-volume clearance stock with little left to lose; the average-price discount measure can also overstate depth when the sales-channel mix shifts.
 
-&#91;image: Article-level tab, week-35 run\]
+![Week_35_Dashboard_Incremental_ArticleLevel](../img/wk35_2_Incremental.png)
 
-&#91;image: Article-level tab, week-36 run\]
+![Week_36_Dashboard_Incremental_ArticleLevel](../img/wk36_2_Incremental.png)
 
 ## Cannibalization
 
@@ -70,11 +70,11 @@ Exposed articles lost sales in both runs: 16,198.6 units in week 35 and 7,612.0 
 
 - **Category flags rest on tiny denominators.** The high-cannibalization flag fires only where a category's gross is positive and those gross values are small. Swimwear / Jersey Fancy, for example, has gross of 1.00 unit and a cannibalized share of −10.28 in week 35. Only one or two rows are flagged in each of Shoes, Swimwear and Garment Lower body in week 35 and Accessories, Garment Full body and Garment Lower body in week 36.
 - **Some pairs are true substitutes.** Luca → Luca (raw change −9.38 units) pairs two articles with the same product name, most likely colour variants. Lady blouse → Bonus blouse, Kagan top and Samantha are plausible alternatives with small losses (−0.21 to −2.58 units).
-- **Some pairs are complements.** Vitamin Sea Top → Vitamin Sea Cheeky Brief (−23.13 units) is a bikini top and its matching brief. The behavior embedding pairs them because the same customers buy both, so their joint drop in early September more likely reflects swimwear going out of season than one article taking sales from the other.
+- **Some pairs are complements.** Vitamin Sea Top → Vitamin Sea Cheeky Brief (−23.13 units) is a bikini top and its matching brief. The behaviour embedding pairs them because the same customers buy both, so their joint drop in early September more likely reflects swimwear going out of season than one article taking sales from the other.
 
-&#91;image: Cannibalization tab, week-35 run\]
+![Week_35_Dashboard_Cannibalization](../img/wk35_3_Cannibalization.png)
 
-&#91;image: Cannibalization tab, week-36 run\]
+![Week_36_Dashboard_Cannibalization](../img/wk36_3_Cannibalization.png)
 
 ## Pipeline health
 
@@ -84,7 +84,9 @@ The log shows three runs with stable sample sizes and one gap: the week-36 run r
 - **Design diagnostics.** Matched controls fall from 4,440 to roughly 4,250. R² (0.025 in week 35) shares an axis with counts in the thousands, so it reads as zero; a low R² is expected, since the DiD regression only separates group and period means.
 - **Embedding freshness.** The embedding timestamp rises between the first two runs, then stays at 19:37 for the week-36 run, so notebook 03 was not rerun. This causes no leakage, because its behavior cutoff (2020-08-24) is still before the week-36 treatment week. But purchases from the week of 2020-08-24 are missing from the behavior embeddings and the chart shows this only as a flat line.
 
-&#91;image: Pipeline Health tab, all three runs\]
+![Week_35_Dashboard_Health](../img/wk35_3_Health.png)
+
+![Week_36_Dashboard_Health](../img/wk36_3_Health.png)
 
 ## What the results mean
 
